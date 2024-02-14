@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanmay D</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/267e6f52cd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h2>Tanmay <span>D.</span></h2>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#resume">Resume</a></li> <!-- Updated navigation link -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Tanmay</span></h1>
+        </div>
+
+        <div style="margin-top: 100px;"></div>
+
+        <!-- My Skills Section -->
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')"><h2>My Skills</h2></p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>JAVA</span><div class="skill-rating-bar" style="--rating: 80%;"></div></li>
+                <li><span>C++</span><div class="skill-rating-bar" style="--rating: 40%;"></div></li>
+                <li><span>HTML</span><div class="skill-rating-bar" style="--rating: 90%;"></div></li>
+                <li><span>CSS</span><div class="skill-rating-bar" style="--rating: 80%;"></div></li>
+                <li><span>PYTHON</span><div class="skill-rating-bar" style="--rating: 70%;"></div></li>
+                <li><span>MySQL</span><div class="skill-rating-bar" style="--rating: 60%;"></div></li>
+                <li><span>JAVASCRIPT</span><div class="skill-rating-bar" style="--rating: 50%;"></div></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- My Projects Section -->
+<div id="projects">
+    <div class="container">
+        <div class="row" align="center">
+            <div class="about-col-2">
+                <h1 class="sub-title">My Projects</h1>
+                <div style="margin-top: 50px;"></div>
+                
+                <!-- Project Boxes -->
+                <div class="project-box">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1</p>
+                </div>
+                <div class="project-box">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2</p>
+                </div>
+                <div class="project-box">
+                    <h3>Project 3</h3>
+                    <p>Description of Project 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="margin-top: 100px;"></div>
+<!-- Experience Section -->
+<div id="Experience">
+    <div class="container">
+        <h1 class="sub-title" align="center">My Experience</h1>
+        <div class="Experience-list">
+            <div>
+                <h2>INTERNSHIP</h2>
+                <i class="fas fa-calendar-day"><span> DEC 2023 – JAN 2024</span></i>
+                <p align="left">4-week virtual internship at Oasis Infobyte, an innovative software development company specializing in Java applications.Over the course of this internship,
+                <p>I had the privilege of working on three distinct projects: the Number Guessing Game, Online Reservation System, and ATM Interface. Each project presented unique challenges and allowed me to apply my knowledge and skills in Java programming, user interface design, and backend development.</p>
+                </p>
+            </div>
+            <div>
+                <h2>META LAND LORDS - A NFT PROJECT</h2>
+                <i class="fas fa-calendar-day"><span> FEB 2022 – May 2022</span></i>
+                <p align ="left">As a Community Manager, collaborated with cross-functional teams to ensure consistent brand messaging and seamless execution of social media initiatives.
+                <p>Developed and executed social media strategies to increase brand awareness, drive traffic to the website, and engage with target audiences.</p>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: 100px;"></div>
+<!-- Resume Section -->
+<div class="resume">
+    <div class="container" id="resume"> <!-- Added ID to the resume section -->
+        <h1 class="sub-title" align="center">My Resume</h1>
+        <div class="Resume-list" align="center">
+            <a href="C:\Users\dheng\Desktop\portfolio2\image\RESUME FOR INTERNSHIP1.pdf" class="button button2" download>Download CV</a>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: 100px;"></div>
+<!-- Contact Section -->
+<div id="contact">
+    <div class="container">
+        <div class="row" align="center">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i><a href="mailto:dhengletanmay@gmail.com">dhengletanmay@gmail.com</a></p>
+                <p><i class="fas fa-mobile-alt"></i>+918208933212</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/dhengle-tanmay/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/tanmay__dhengle/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/nemesis_tan"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+    <div style="margin-top: 80px;"></div>
+    <div class="copyright" align="center">
+        <p>Copyright © Tanmay Dhengle.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
